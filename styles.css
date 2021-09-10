@@ -1,3 +1,17 @@
 body {
-  background: orange;
+  background-image: url('https://www.todofondos.net/wp-content/uploads/todofondos-colorespasteles13-576x1024.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.tituloPagina {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: black;
+  border-bottom-style: solid;
+  border-color: gray;
+  border-bottom-width: thin;
+  padding-bottom: 0.1em;
+  margin-bottom: 0.5em;
 }
