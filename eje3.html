@@ -18,51 +18,87 @@
 
   <link rel="stylesheet" href="styles.css">
 
+  
   <title>Ejercicio3</title>
 </head>
 
 <body>
-  <h1 class="titulopagina">Listado de productos</h1>
-
-  <table border="1">
-    <tr>
-      <th>Nombre</th>
-      <th>Precio</th>
-      <th>Stock</th>
-      <th>Im&aacute;gen</th>
-    </tr>
-    <tr>
-      <td>Televisor <i><b>Sanyo</b></i></td>
-      <td>5000</td>
-      <td>10</td>
-      <td><img src="" alt="Televisor Sanyo" width="50" height="50"></td>
-    </tr>
-    <tr>
-      <td>Lavarropa <i><b>Samsung&nbsp;</b></i></td>
-      <td>8000</td>
-      <td>Sin stock</td>
-      <td><img src="" alt="Lavarropa Samsung" width="50" height="50"></td>
-    </tr>
-    <tr>
-      <td>Cocina <i><b>Longvie</b></i></td>
-      <td>9000</td>
-      <td>4</td>
-      <td><img src="" alt="Cocina Longvie" width="50" height="50"></td>
-    </tr>
-    <tr>
-      <td colspan="2">Productos en stock en la sucursal</td>
-      <td colspan="1">14</td>
-    </tr>
-  </table>
-
-  <br>
-  <hr>
-  <div>
-    <a href="/index.html">Volver a la p&aacute;gina de inicio</a>
+  <div class="text-center" style="margin-bottom:0">
+    <h1>Ejercicios HTML</h1>
+    <p>Programaci&oacute;n de Aplicaciones Visuales II</p>
   </div>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+<span class="navbar-toggler-icon"></span>
+</button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="eje1.html">Ejercicio1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="eje2.html">Ejercicio2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="eje3.html">Ejercicio3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="eje4.html">Ejercicio4</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <br>
-  <div>
-    <a href="/eje4.html">Ir a la resolución del Ejercicio 4</a>
+
+  <div class="container">
+    <div _ngcontent-qqw-c102 class="tituloPagina">Listado de productos</div>
+    <hr>
+
+    <div _ngcontent-tnc-c102 class="container-fluid">
+      <div _ngcontent-tnc-c102 class="row">
+        <div _ngcontent-tnc-c102 class="col-2"></div>
+        <div _ngcontent-tnc-c102 class="col-8">
+
+          <table class="table table-hover table-sm table-bordered table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Im&aacute;gen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Televisor <i><b>Sanyo</b></i></td>
+                <td>5000</td>
+                <td>10</td>
+                <td><img src="" alt="Televisor Sanyo" width="50" height="50"></td>
+              </tr>
+              <tr>
+                <td>Lavarropa <i><b>Samsung&nbsp;</b></i></td>
+                <td>8000</td>
+                <td>Sin stock</td>
+                <td><img src="" alt="Lavarropa Samsung" width="50" height="50"></td>
+              </tr>
+              <tr>
+                <td>Cocina <i><b>Longvie</b></i></td>
+                <td>9000</td>
+                <td>4</td>
+                <td><img src="" alt="Cocina Longvie" width="50" height="50"></td>
+              </tr>
+              <tr>
+                <td colspan="2">Productos en stock en la sucursal</td>
+                <td colspan="2">14</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div _ngcontent-tnc-c102 class="col-2"></div>
+      </div>
+    </div>
   </div>
 
   <!-- Optional JavaScript; choose one of the two! -->

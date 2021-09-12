@@ -22,69 +22,162 @@
 </head>
 
 <body>
-  <h1 class="titulopagina">Ejercicio Formularios en html</h1>
-  <form action="POST">
-    <input name="usu" type="text" placeholder="Usuario o correo electrónico" maxlength="20" required><br><br>
+  <div class="text-center" style="margin-bottom:0">
+    <h1>Ejercicios HTML</h1>
+    <p>Programaci&oacute;n de Aplicaciones Visuales II</p>
+  </div>
 
-    <input name="clave" type="password" placeholder="Contraseña" maxlength="20" required><br><br>
-
-    <input name="btnIniciarSesion" type="submit" value="Iniciar sesión">
-
-    <input name="btnAlert" type="button" name="alerta" value="Mostrar alerta"
-    onclick="alert('Input type=button  !!')"/>
-
-    <button name="btnReset" type="reset"> Borrar datos</button>
-  </form>
-  <hr>
-
-
-  <h2>Crear cuenta nueva</h2>
-  <h4>Registrarte</h4>
-  <h5>Es rápido y fácil.</h5>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+<span class="navbar-toggler-icon"></span>
+</button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="eje1.html">Ejercicio1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="eje2.html">Ejercicio2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="eje3.html">Ejercicio3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="eje4.html">Ejercicio4</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <br>
 
-  <form action="POST">
-    <label for="">Nombre*  </label><input name="nombre" type="text" placeholder="Ingrese su nombre" maxlength="20" required><br><br>
+  <div class="container">
+    <div _ngcontent-qqw-c102 class="tituloPagina">Ejercicio Formularios en html</div>
 
-    <label for="">Apellido*  </label><input name="apellido" type="text" placeholder="Ingrese su apellido" required><br><br>
+    <form>
+      <div class="form-group">
+        <label for="usuEmail">Correo electrónico</label>
+        <input type="email" class="form-control" id="usuEmail" aria-describedby="emailHelp">
+        <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electr&oacute;nico con nadie m&aacute;s.</small>
+      </div>
+      <div class="form-group">
+        <label for="clave">Contraseña</label>
+        <input type="password" class="form-control" id="clave">
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="btnRecordarDatos">
+        <label class="form-check-label" for="btnRecordarDatos">Recordar mis datos</label>
+      </div>
+      <button name="btnIniciarSesion" type="submit" class="btn btn-primary">Iniciar sesi&oacute;n</button>
+      <button name="btnAlert" type="submit" class="btn btn-warning" onclick="alert('Input type=button  !!')">Mostrar alerta</button>
+    </form>
 
-    <label for="">Número de celular o correo electrónico*  </label><input name="nroCelu" type="text" placeholder="Ingrese su nro de celular" required><br><br>
+    <hr>
 
-    <label for="">Contraseña nueva*  </label><input name="claveNueva" type="password" placeholder="Ingrese su contraseña" maxlength="20" required><br><br>
+    <h2>Crear cuenta nueva</h2>
+    <h4>Registrarte</h4>
+    <h5>Es rápido y fácil</h5>
+    <br>
 
-    <label for="">Fecha de nacimiento*  </label><input name="fechaNac" type="date" required><br><br>
+    <form>
+      <div class="form-group">
+        <label for="nombre">Nombre*</label>
+        <input type="text" class="form-control" id="nombre">
+      </div>
 
-    <label for="">Sexo*  </label><br>
-    <input type="radio" name="sexo" value="mujer"> Mujer<br>
-    <input type="radio" name="sexo" value="mujer"> Hombre<br>
-    <input type="radio" name="sexo" value="mujer"> Personalizado<br>
-    <br><br>
+      <div class="form-group">
+        <label for="apellido">Apellido*</label>
+        <input type="text" class="form-control" id="apellido">
+      </div>
 
-    <label for="">Idiomas*  </label><br>
-    <input type="checkbox" name="idioma1" value="ingles" checked> Ingl&eacute;s<br>
-    <input type="checkbox" name="idioma2" value="portugues"> Portugu&eacute;s<br>
-    <input type="checkbox" name="idioma3" value="frances"> Franc&eacute;s<br>
-    <br><br>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Correo electrónico*</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+      </div>
 
-    <label for="">Estado civil*  </label><br>
-    <select name="menuEstadoCivil" id="" size="4">
+      <div class="form-group">
+        <label for="claveNueva">Contraseña*</label>
+        <input type="password" class="form-control" id="claveNueva">
+      </div>
+
+      <div class="form-group">
+        <label for="fechaNac">Fecha de nacimiento*</label>
+        <input type="date" class="form-control" id="fechaNac">
+      </div>
+
+      <div class="form-check">
+        <label for="">Sexo*</label><br>
+        <input class="form-check-input" type="radio" name="sexo" id="exampleRadios1" value="mujer" checked>
+        <label class="form-check-label" for="exampleRadios1">
+        Mujer
+      </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="sexo" id="exampleRadios2" value="hombre">
+        <label class="form-check-label" for="exampleRadios2">
+        Hombre
+      </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="sexo" id="exampleRadios3" value="personalizado" disabled>
+        <label class="form-check-label" for="exampleRadios3">
+        Personalizado
+      </label>
+      </div> <br>
+
+      <div class="form-check">
+        <label for="">Idiomas*</label><br>
+        <input class="form-check-input" type="checkbox" value="ingles" id="idioma1">
+        <label class="form-check-label" for="idioma1">
+        Ingl&eacute;s
+      </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="portugues" id="idioma2">
+        <label class="form-check-label" for="idioma2">
+        Portugu&eacute;s
+      </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="frances" id="idioma3">
+        <label class="form-check-label" for="idioma3">
+        Franc&eacute;s
+    </label>
+      </div>
+      
+      <div class="form-group">
+        <label for="exampleFormControlSelect2">Estado civil</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2">
+        <option>Soltero/a</option>
+        <option>Casado/a</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+
+      <hr>
+
+      <label for="">Estado civil*  </label><br>
+      <select name="menuEstadoCivil" id="" size="4">
       <option value="soltero/a" selected>Soltero/a</option>
       <option value="casado/a">Casado/a</option>
       <option value="divorciado/a">Divorciado/a</option>
       <option value="viudo/a">Viudo/a</option>
     </select>
-    <br><br>
+      <br><br>
 
-    <textarea name="observaciones" id="" cols="50" rows="5" placeholder="Observaciones.."></textarea>
-    <br><br>
-    <input name="btnRegistrarse" type="submit" value="Registrarse">
-    <button name="btnReset" type="reset"> Borrar datos</button>
-  </form>
-
-  <br>
-  <hr>
-  <div>
-    <a href="/index.html">Volver a la p&aacute;gina de inicio</a>
+      <textarea name="observaciones" id="" cols="50" rows="5" placeholder="Observaciones.."></textarea>
+      <br><br>
+      <input name="btnRegistrarse" type="submit" value="Registrarse">
+      <button name="btnReset" type="reset"> Borrar datos</button>
+    </form>
   </div>
 
   <!-- Optional JavaScript; choose one of the two! -->
